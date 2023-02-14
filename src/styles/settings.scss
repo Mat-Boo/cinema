@@ -1,0 +1,14 @@
+$mainFont: 'Raleway', sans-serif;
+$MainBlue: #0073cc;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    font-family: $mainFont;
+    color: white;
+}
+

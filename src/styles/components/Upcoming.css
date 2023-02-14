@@ -1,0 +1,37 @@
+.UpcomingMoviesBox .HeaderSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+}
+
+.UpcomingMoviesBox .HeaderSlider .ShowMoreBtn {
+  border: 2px solid white;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.UpcomingMoviesBox .HeaderSlider .ShowMoreBtn:hover {
+  background: white;
+  color: black;
+}
+
+.UpcomingMoviesBox .UpcomingMoviesList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.UpcomingMoviesBox .UpcomingMoviesList .swiper-slide {
+  width: auto;
+}
+/*# sourceMappingURL=Upcoming.css.map */

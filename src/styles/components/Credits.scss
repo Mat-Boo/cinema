@@ -1,0 +1,14 @@
+.CastListItem {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    .CastPicture {
+        width: 90%;
+        border-radius: 5px;
+    }
+    .CastName {
+        text-align: center;
+        font-size: 0.8em;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,98 @@
+.SerieDetailsPageBg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+.SerieDetailsPage {
+    
+    .SerieDetails {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20vh;
+        .SeriePoster {
+            width: 367px;
+            height: 550px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .DetailsBox {
+            width: 45%;
+            height: 550px;
+            max-width: 640px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .DateReleased {
+                font-style: italic;
+                font-size: 0.9em;
+            }
+            .SerieTitle {
+                font-size: 2.5em;
+                margin-bottom: 10px;
+            }
+            .GenresList {
+                list-style: none;
+                display: flex;
+                .GenreItem {
+                    border: 2px solid white;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    font-weight: 500;
+                    margin-right: 5px;
+                    font-size: 0.8em;
+                }
+            }
+            .CastingBox {
+                margin-top: 10px;
+                .CastingTitle {
+                    margin-bottom: 5px;
+                }
+                .CastingList {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                }
+            }
+        }
+    }
+    .TrailersList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        margin-top: 250px;
+        .TrailerItem {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .SerieDetailsPage {
+
+        .SerieDetails {
+            flex-direction: column;
+            margin-top: 10px;
+            .SeriePoster {
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+            .DetailsBox {
+                width: 90%;
+                .SerieTitle {
+                    text-align: center;
+                }
+            }
+        }
+        .TrailersList {
+            margin-top: 100px;
+        }
+    }
+}

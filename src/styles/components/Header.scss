@@ -1,0 +1,107 @@
+.Header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 10px 90px 10px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 3;
+    .LogoTitleBox {
+        display: flex;
+        text-decoration: none;
+        color: white;
+        .PlayIcon {
+            background: $MainBlue;
+            width: 40px;
+            padding: 0 7px 0 7px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .MyMoviesTitle {
+            font-weight: 600;
+            font-size: 2.8em;
+        }
+    }
+    .NavList {
+        list-style: none;
+        display: flex;
+        .NavItem {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            margin-right: 35px;
+            font-size: 1.5em;
+            &:hover {
+                border-bottom: $MainBlue solid 3px;
+            }
+        }
+        .LastNavItem {
+            margin-right: 0;
+        }
+        .active {
+            border-bottom: $MainBlue solid 3px;
+        }
+    }
+    .NavListMini {
+        display: none;
+        list-style: none;
+        position: fixed;
+        bottom: 0;
+        justify-content: space-around;
+        width: 100vw;
+        height: 70px;
+        color: black;
+        background: white;
+        .NavItemMini {
+            height: 100%;
+            text-decoration: none;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .NavIconMini {
+                width: 90%;
+                margin-bottom: 0;
+            }
+            .HomeIcon {
+                width: 85%;
+                margin-top: 6px;
+            }
+            .MovieIcon, .TvIcon {
+                margin-top: 10px;
+            }
+            .NavItemTitleMini {
+                font-size: 0.9em;
+                margin-bottom: 3px;
+            }
+        }
+        .active {
+            filter: invert(33%) sepia(61%) saturate(5712%) hue-rotate(192deg) brightness(92%) contrast(101%);
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .LogoTitleBox {
+        
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Header {
+        .NavList {
+            display: none;
+        }
+        .NavListMini {
+            display: flex;
+        }
+    }
+}

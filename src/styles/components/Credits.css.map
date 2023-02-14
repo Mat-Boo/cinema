@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CAUzB;;AAbD,AAII,aAJS,CAIT,YAAY,CAAC;EACT,KAAK,EAAE,GAAG;EACV,aAAa,EAAE,GAAG;CACrB;;AAPL,AAQI,aARS,CAQT,SAAS,CAAC;EACN,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "Credits.scss"
+    ],
+    "names": [],
+    "file": "Credits.css"
+}

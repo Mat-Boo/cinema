@@ -1,0 +1,24 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+    .SlidersList {
+        position: relative;
+        top: 5vh;
+        list-style: none;
+        padding: 0 90px 40px 90px;
+        .SliderItem {
+            margin-bottom: 50px;
+            background: rgb(20, 18, 18);
+            padding: 15px;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Home {
+        .SlidersList {
+            padding: 40px 10px 40px 10px;
+        }
+    }
+}

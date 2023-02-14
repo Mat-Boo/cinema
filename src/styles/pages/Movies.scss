@@ -1,0 +1,33 @@
+.MoviesPage {
+    display: flex;
+    flex-direction: column;
+    .PopularMoviesList {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 90px 100px 90px;
+        position: relative;
+        justify-content: center;
+    }
+    .LoadMoreBtn {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid white ;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-weight: 500;
+        &:hover {
+            background: white;
+            color: black;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .MoviesPage {
+        .PopularMoviesList {
+            padding: 0 20px 80px 20px;
+        }
+    }
+}

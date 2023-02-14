@@ -1,0 +1,161 @@
+.MovieHomeHeader {
+  height: 100vh;
+  position: relative;
+}
+
+.MovieHomeHeader .BackgroundPicture {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.MovieHomeHeader .MovieHeader {
+  padding: 40px 140px 40px 140px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  max-width: 1000px;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .MovieTitle {
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .Overview {
+  font-weight: 500;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .BtnBox {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .BtnBox .MovieHeaderBtn {
+  padding: 10px 25px;
+  border: white 2px solid;
+  border-radius: 20px;
+  margin-right: 25px;
+  font-weight: 600;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .BtnBox .NavMovieItem {
+  text-decoration: none;
+  color: white;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .BtnBox .BaBtn {
+  background: red;
+  border: red;
+  -webkit-box-shadow: 0 1px 20px red;
+          box-shadow: 0 1px 20px red;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .TrailerHomeHeaderBox {
+  display: none;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 5000ms linear;
+  transition: all 5000ms linear;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .TrailerHomeHeaderBox .NavCloseBtn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .TrailerHomeHeaderBox .NavCloseBtn .CloseBtn {
+  -webkit-filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(129deg) brightness(108%) contrast(101%);
+          filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(129deg) brightness(108%) contrast(101%);
+  width: 32px;
+}
+
+.MovieHomeHeader .MovieHeader .MoviePoster {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .MovieHomeHeader .MovieHeader {
+    padding: 0px 20px 40px 20px;
+  }
+  .MovieHomeHeader .MovieHeader .MovieDetails {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .MovieHomeHeader .MovieHeader .MovieDetails .MovieTitle {
+    text-align: center;
+  }
+  .MovieHomeHeader .MovieHeader .MoviePoster {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .MovieHomeHeader .MovieHeader .MovieDetails {
+    height: 80vh;
+  }
+  .MovieHomeHeader .MovieHeader .MovieDetails .MovieTitle {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .MovieHomeHeader .MovieHeader {
+    padding: 160px 20px 40px 20px;
+  }
+  .MovieHomeHeader .MovieHeader .MovieDetails .BtnBox {
+    height: 15%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .MovieHomeHeader .MovieHeader {
+    padding: 250px 20px 40px 20px;
+  }
+}
+/*# sourceMappingURL=MovieHomeHeader.css.map */

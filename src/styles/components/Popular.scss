@@ -1,0 +1,27 @@
+.PopularMoviesBox {
+    .HeaderSlider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px white;
+        padding-bottom: 10px;
+        .ShowMoreBtn {
+            border: 2px solid white;
+            font-weight: 500;
+            padding: 5px 15px;
+            border-radius: 20px;
+            &:hover {
+                background: white;
+                color: black;
+            }
+        }
+    }
+    .PopularMoviesList {
+        list-style: none;
+        display: flex;
+        .swiper-slide {
+            width: auto;
+        }
+    }
+}
+

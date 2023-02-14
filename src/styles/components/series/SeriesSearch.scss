@@ -1,0 +1,31 @@
+.SeriesBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .SearchInput {
+        margin: 130px 0 0 0;
+        padding: 5px 10px;
+        align-self: center;
+        font-size: 2em;
+        border-radius: 5px;
+        border: none;
+    }
+    .Series {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 90px 20px 90px;
+        .SeriesList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    
+    @media screen and (max-width: 1100px) {
+        .SearchInput {
+            margin: 150px 0 0 0;
+            width: 80%;
+            max-width: 413px;
+        }
+    }
+}

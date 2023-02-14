@@ -1,0 +1,1264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+.Home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Home .SlidersList {
+  position: relative;
+  top: 5vh;
+  list-style: none;
+  padding: 0 90px 40px 90px;
+}
+
+.Home .SlidersList .SliderItem {
+  margin-bottom: 50px;
+  background: #141212;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .Home .SlidersList {
+    padding: 40px 10px 40px 10px;
+  }
+}
+
+.MoviesPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.MoviesPage .PopularMoviesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 40px 90px 100px 90px;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.MoviesPage .LoadMoreBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 2px solid white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.MoviesPage .LoadMoreBtn:hover {
+  background: white;
+  color: black;
+}
+
+@media screen and (max-width: 1100px) {
+  .MoviesPage .PopularMoviesList {
+    padding: 0 20px 80px 20px;
+  }
+}
+
+.SeriesPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.SeriesPage .PopularSeriesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 90px 100px 90px;
+  position: relative;
+}
+
+.SeriesPage .LoadMoreBtn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 2px solid white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.SeriesPage .LoadMoreBtn:hover {
+  background: white;
+  color: black;
+}
+
+@media screen and (max-width: 1100px) {
+  .SeriesPage .PopularSeriesList {
+    padding: 0 20px 80px 20px;
+  }
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 10px 90px 10px 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 3;
+}
+
+.Header .LogoTitleBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+.Header .LogoTitleBox .PlayIcon {
+  background: #0073cc;
+  width: 40px;
+  padding: 0 7px 0 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Header .LogoTitleBox .MyMoviesTitle {
+  font-weight: 600;
+  font-size: 2.8em;
+}
+
+.Header .NavList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Header .NavList .NavItem {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  margin-right: 35px;
+  font-size: 1.5em;
+}
+
+.Header .NavList .NavItem:hover {
+  border-bottom: #0073cc solid 3px;
+}
+
+.Header .NavList .LastNavItem {
+  margin-right: 0;
+}
+
+.Header .NavList .active {
+  border-bottom: #0073cc solid 3px;
+}
+
+.Header .NavListMini {
+  display: none;
+  list-style: none;
+  position: fixed;
+  bottom: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100vw;
+  height: 70px;
+  color: black;
+  background: white;
+}
+
+.Header .NavListMini .NavItemMini {
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Header .NavListMini .NavItemMini .NavIconMini {
+  width: 90%;
+  margin-bottom: 0;
+}
+
+.Header .NavListMini .NavItemMini .HomeIcon {
+  width: 85%;
+  margin-top: 6px;
+}
+
+.Header .NavListMini .NavItemMini .MovieIcon, .Header .NavListMini .NavItemMini .TvIcon {
+  margin-top: 10px;
+}
+
+.Header .NavListMini .NavItemMini .NavItemTitleMini {
+  font-size: 0.9em;
+  margin-bottom: 3px;
+}
+
+.Header .NavListMini .active {
+  -webkit-filter: invert(33%) sepia(61%) saturate(5712%) hue-rotate(192deg) brightness(92%) contrast(101%);
+          filter: invert(33%) sepia(61%) saturate(5712%) hue-rotate(192deg) brightness(92%) contrast(101%);
+}
+
+@media screen and (max-width: 1100px) {
+  .Header {
+    padding: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Header .NavList {
+    display: none;
+  }
+  .Header .NavListMini {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.MovieBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MovieBox .SearchInput {
+  margin: 130px 0 0 0;
+  padding: 5px 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 2em;
+  border-radius: 5px;
+  border: none;
+}
+
+.MovieBox .Movies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 90px 20px 90px;
+}
+
+.MovieBox .Movies .MoviesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .MovieBox .SearchInput {
+    margin: 150px 0 0 0;
+    width: 80%;
+    max-width: 413px;
+  }
+}
+
+.CardMovie {
+  list-style: none;
+  padding: 10px 0;
+  width: 200px;
+}
+
+.CardMovie .NavMovieItem {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.CardMovie .MoviePoster {
+  width: 150px;
+  height: 225px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.CardMovie .MovieTitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.MovieDetailsPageBg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.MovieDetailsPage .MovieDetails {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20vh;
+}
+
+.MovieDetailsPage .MovieDetails .MoviePoster {
+  width: 367px;
+  height: 550px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.MovieDetailsPage .MovieDetails .DetailsBox {
+  width: 45%;
+  height: 550px;
+  max-width: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.MovieDetailsPage .MovieDetails .DetailsBox .DateReleased {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.MovieDetailsPage .MovieDetails .DetailsBox .MovieTitle {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.MovieDetailsPage .MovieDetails .DetailsBox .GenresList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.MovieDetailsPage .MovieDetails .DetailsBox .GenresList .GenreItem {
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+
+.MovieDetailsPage .MovieDetails .DetailsBox .CastingBox {
+  margin-top: 10px;
+}
+
+.MovieDetailsPage .MovieDetails .DetailsBox .CastingBox .CastingTitle {
+  margin-bottom: 5px;
+}
+
+.MovieDetailsPage .MovieDetails .DetailsBox .CastingBox .CastingList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.MovieDetailsPage .TrailersList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin-top: 250px;
+}
+
+.MovieDetailsPage .TrailersList .TrailerItem {
+  width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .MovieDetailsPage .MovieDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+  }
+  .MovieDetailsPage .MovieDetails .MoviePoster {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .MovieDetailsPage .MovieDetails .DetailsBox {
+    width: 90%;
+  }
+  .MovieDetailsPage .MovieDetails .DetailsBox .MovieTitle {
+    text-align: center;
+  }
+  .MovieDetailsPage .TrailersList {
+    margin-top: 100px;
+  }
+}
+
+.CastListItem {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.CastListItem .CastPicture {
+  width: 90%;
+  border-radius: 5px;
+}
+
+.CastListItem .CastName {
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.TrailerItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.TrailerItem .TrailerName {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.TrailerItem .TrailerVideo {
+  width: 1000px;
+  height: 588px;
+}
+
+@media screen and (max-width: 1100px) {
+  .TrailerItem .TrailerVideo {
+    width: 90%;
+    height: 40vh;
+  }
+}
+
+.PopularMoviesBox .HeaderSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+}
+
+.PopularMoviesBox .HeaderSlider .ShowMoreBtn {
+  border: 2px solid white;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.PopularMoviesBox .HeaderSlider .ShowMoreBtn:hover {
+  background: white;
+  color: black;
+}
+
+.PopularMoviesBox .PopularMoviesList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.PopularMoviesBox .PopularMoviesList .swiper-slide {
+  width: auto;
+}
+
+.TopRatedMoviesBox .HeaderSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+}
+
+.TopRatedMoviesBox .HeaderSlider .ShowMoreBtn {
+  border: 2px solid white;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.TopRatedMoviesBox .HeaderSlider .ShowMoreBtn:hover {
+  background: white;
+  color: black;
+}
+
+.TopRatedMoviesBox .TopRatedMoviesList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.TopRatedMoviesBox .TopRatedMoviesList .swiper-slide {
+  width: auto;
+}
+
+.UpcomingMoviesBox .HeaderSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+}
+
+.UpcomingMoviesBox .HeaderSlider .ShowMoreBtn {
+  border: 2px solid white;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.UpcomingMoviesBox .HeaderSlider .ShowMoreBtn:hover {
+  background: white;
+  color: black;
+}
+
+.UpcomingMoviesBox .UpcomingMoviesList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.UpcomingMoviesBox .UpcomingMoviesList .swiper-slide {
+  width: auto;
+}
+
+.PopularSeriesBox .HeaderSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+}
+
+.PopularSeriesBox .HeaderSlider .ShowMoreBtn {
+  border: 2px solid white;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.PopularSeriesBox .HeaderSlider .ShowMoreBtn:hover {
+  background: white;
+  color: black;
+}
+
+.PopularSeriesBox .PopularSeriesList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.PopularSeriesBox .PopularSeriesList .swiper-slide {
+  width: auto;
+}
+
+.TopRatedSeriesBox .HeaderSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+}
+
+.TopRatedSeriesBox .HeaderSlider .ShowMoreBtn {
+  border: 2px solid white;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.TopRatedSeriesBox .HeaderSlider .ShowMoreBtn:hover {
+  background: white;
+  color: black;
+}
+
+.TopRatedSeriesBox .TopRatedSeriesList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.TopRatedSeriesBox .TopRatedSeriesList .swiper-slide {
+  width: auto;
+}
+
+.UpcomingSeriesBox .HeaderSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+}
+
+.UpcomingSeriesBox .HeaderSlider .ShowMoreBtn {
+  border: 2px solid white;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.UpcomingSeriesBox .HeaderSlider .ShowMoreBtn:hover {
+  background: white;
+  color: black;
+}
+
+.UpcomingSeriesBox .UpcomingSeriesList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.UpcomingSeriesBox .UpcomingSeriesList .swiper-slide {
+  width: auto;
+}
+
+.CardSerie {
+  list-style: none;
+  padding: 10px 0;
+  width: 200px;
+}
+
+.CardSerie .NavSerieItem {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.CardSerie .SeriePoster {
+  width: 170px;
+  height: 255px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.CardSerie .SerieTitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.SerieDetailsPageBg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.SerieDetailsPage .SerieDetails {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20vh;
+}
+
+.SerieDetailsPage .SerieDetails .SeriePoster {
+  width: 367px;
+  height: 550px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.SerieDetailsPage .SerieDetails .DetailsBox {
+  width: 45%;
+  height: 550px;
+  max-width: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.SerieDetailsPage .SerieDetails .DetailsBox .DateReleased {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.SerieDetailsPage .SerieDetails .DetailsBox .SerieTitle {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.SerieDetailsPage .SerieDetails .DetailsBox .GenresList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.SerieDetailsPage .SerieDetails .DetailsBox .GenresList .GenreItem {
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+
+.SerieDetailsPage .SerieDetails .DetailsBox .CastingBox {
+  margin-top: 10px;
+}
+
+.SerieDetailsPage .SerieDetails .DetailsBox .CastingBox .CastingTitle {
+  margin-bottom: 5px;
+}
+
+.SerieDetailsPage .SerieDetails .DetailsBox .CastingBox .CastingList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.SerieDetailsPage .TrailersList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin-top: 250px;
+}
+
+.SerieDetailsPage .TrailersList .TrailerItem {
+  width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .SerieDetailsPage .SerieDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+  }
+  .SerieDetailsPage .SerieDetails .SeriePoster {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .SerieDetailsPage .SerieDetails .DetailsBox {
+    width: 90%;
+  }
+  .SerieDetailsPage .SerieDetails .DetailsBox .SerieTitle {
+    text-align: center;
+  }
+  .SerieDetailsPage .TrailersList {
+    margin-top: 100px;
+  }
+}
+
+.SeriesBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SeriesBox .SearchInput {
+  margin: 130px 0 0 0;
+  padding: 5px 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 2em;
+  border-radius: 5px;
+  border: none;
+}
+
+.SeriesBox .Series {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 90px 20px 90px;
+}
+
+.SeriesBox .Series .SeriesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .SeriesBox .SearchInput {
+    margin: 150px 0 0 0;
+    width: 80%;
+    max-width: 413px;
+  }
+}
+
+.SimilarMoviesBox {
+  padding: 40px 140px 40px 140px;
+}
+
+.SimilarMoviesBox .HeaderSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+}
+
+.SimilarMoviesBox .HeaderSlider .ShowMoreBtn {
+  border: 2px solid white;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.SimilarMoviesBox .HeaderSlider .ShowMoreBtn:hover {
+  background: white;
+  color: black;
+}
+
+.SimilarMoviesBox .SimilarMoviesList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.SimilarMoviesBox .SimilarMoviesList .swiper-slide {
+  width: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .SimilarMoviesBox {
+    padding: 40px 10px 40px 10px;
+  }
+}
+
+.SimilarSeriesBox {
+  padding: 40px 140px 40px 140px;
+}
+
+.SimilarSeriesBox .HeaderSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px white;
+  padding-bottom: 10px;
+}
+
+.SimilarSeriesBox .HeaderSlider .ShowMoreBtn {
+  border: 2px solid white;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.SimilarSeriesBox .HeaderSlider .ShowMoreBtn:hover {
+  background: white;
+  color: black;
+}
+
+.SimilarSeriesBox .SimilarSeriesList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.SimilarSeriesBox .SimilarSeriesList .swiper-slide {
+  width: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .SimilarSeriesBox {
+    padding: 40px 10px 40px 10px;
+  }
+}
+
+.MovieHomeHeader {
+  height: 100vh;
+  position: relative;
+}
+
+.MovieHomeHeader .BackgroundPicture {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.MovieHomeHeader .MovieHeader {
+  padding: 40px 140px 40px 140px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  max-width: 1000px;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .MovieTitle {
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .Overview {
+  font-weight: 500;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .BtnBox {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .BtnBox .MovieHeaderBtn {
+  padding: 10px 25px;
+  border: white 2px solid;
+  border-radius: 20px;
+  margin-right: 25px;
+  font-weight: 600;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .BtnBox .NavMovieItem {
+  text-decoration: none;
+  color: white;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .BtnBox .BaBtn {
+  background: red;
+  border: red;
+  -webkit-box-shadow: 0 1px 20px red;
+          box-shadow: 0 1px 20px red;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .TrailerHomeHeaderBox {
+  display: none;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 5000ms linear;
+  transition: all 5000ms linear;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .TrailerHomeHeaderBox .NavCloseBtn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.MovieHomeHeader .MovieHeader .MovieDetails .TrailerHomeHeaderBox .NavCloseBtn .CloseBtn {
+  -webkit-filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(129deg) brightness(108%) contrast(101%);
+          filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(129deg) brightness(108%) contrast(101%);
+  width: 32px;
+}
+
+.MovieHomeHeader .MovieHeader .MoviePoster {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .MovieHomeHeader .MovieHeader {
+    padding: 0px 20px 40px 20px;
+  }
+  .MovieHomeHeader .MovieHeader .MovieDetails {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .MovieHomeHeader .MovieHeader .MovieDetails .MovieTitle {
+    text-align: center;
+  }
+  .MovieHomeHeader .MovieHeader .MoviePoster {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .MovieHomeHeader .MovieHeader .MovieDetails {
+    height: 80vh;
+  }
+  .MovieHomeHeader .MovieHeader .MovieDetails .MovieTitle {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .MovieHomeHeader .MovieHeader {
+    padding: 160px 20px 40px 20px;
+  }
+  .MovieHomeHeader .MovieHeader .MovieDetails .BtnBox {
+    height: 15%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .MovieHomeHeader .MovieHeader {
+    padding: 250px 20px 40px 20px;
+  }
+}
+
+.TrailerHomeHeaderItem .TrailerHomeHeaderVideo {
+  width: 1000px;
+  height: 588px;
+}
+
+@media screen and (max-width: 1100px) {
+  .TrailerHomeHeaderItem .TrailerHomeHeaderVideo {
+    width: 90%;
+    height: 40vh;
+  }
+}
+/*# sourceMappingURL=index.css.map */

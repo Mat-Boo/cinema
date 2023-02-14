@@ -1,0 +1,24 @@
+.CardSerie {
+    list-style: none;
+    padding: 10px 0;
+    width: 200px;
+    .NavSerieItem {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .SeriePoster {
+        width: 170px;
+        height: 255px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    .SerieTitle {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1em;
+    }
+}
